@@ -1,0 +1,202 @@
+/* EDIT USER-EDIT USER-NEW */
+
+body.user-new-php{}
+
+.user-new-php{}
+.user-new-php #wpbody-content{}
+.user-new-php #wpbody-content .wrap{
+	border: solid 1px #e5e5e5;
+	background:#ffffff;
+	margin-bottom:25px;
+	width:100%;
+	max-width:992px;
+}
+.user-new-php #wpbody-content .wrap > p{
+	display:none;
+}
+.user-new-php #wpbody-content #add-new-user {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px;
+	margin: 0;
+	line-height: 1.2;
+	color: #282828;
+	border-bottom: solid 2px #e5e5e5;
+	position: relative;
+}
+
+#createuser{
+	padding: 5px 25px;
+	position: relative;
+}
+#createuser .form-table{
+	display:block;
+}
+#createuser .form-table tbody{
+	display:block;
+	margin-left: -10px;
+	margin-right: -10px
+}
+#createuser .form-table tbody tr{
+	display:inline-block;
+	width:calc(50% - 2px);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#createuser .form-table tbody tr:nth-child(1){}
+#createuser .form-table tbody tr:nth-child(2){}
+#createuser .form-table tbody tr:nth-child(3){}
+#createuser .form-table tbody tr:nth-child(4){}
+#createuser .form-table tbody tr:nth-child(5){
+	display:none;
+}
+#createuser .form-table tbody tr:nth-child(6){}
+#createuser .form-table tbody tr:nth-child(7){}
+#createuser .form-table tbody tr:nth-child(8){}
+#createuser .form-table tbody tr:nth-child(9){}
+#createuser .form-table tbody tr:nth-child(10){
+	display:none;
+}
+#createuser .form-table tbody th,
+#createuser .form-table tbody td{
+	display:block;
+	padding:0;
+	width:100%;
+}
+#createuser .form-table tbody th{}
+#createuser .form-table tbody td{}
+#createuser .form-table tbody th input[type=text],
+#createuser .form-table tbody th input[type=email],
+#createuser .form-table tbody td input[type=text],
+#createuser .form-table tbody td input[type=email]{
+	width:100%;
+}
+
+
+body.user-edit-php{}
+body.user-edit-php #wpbody-content{}
+body.user-edit-php #wpbody-content .wrap{
+	border: solid 1px #e5e5e5;
+	background:#ffffff;
+	margin-bottom:25px;
+	width:100%;
+	max-width:992px;
+}
+body.user-edit-php #wpbody-content .wp-heading-inline{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px;
+	margin: 0;
+	line-height: 1.2;
+	color: #282828;
+	border-bottom: solid 2px #e5e5e5;
+	position: relative;
+	display:block;
+}
+body.user-edit-php #wpbody-content .page-title-action{
+	display:none;
+}
+#your-profile{
+	padding: 5px 25px;
+	position: relative;
+}
+#your-profile .form-table{}
+#your-profile > h2:nth-child(5),
+#your-profile > h2:nth-child(7),
+#your-profile > h2:nth-child(9),
+#your-profile > h2:nth-child(11),
+#your-profile > h2:nth-child(13),
+#your-profile > h2:nth-child(17),
+body.user-edit-php #your-profile > h2:nth-child(18),
+body.user-edit-php #your-profile > h2:nth-child(20),
+#your-profile .form-table:nth-child(12),
+#your-profile .form-table:nth-child(18),
+#your-profile .form-table:nth-child(6),
+body.user-edit-php #your-profile .form-table:nth-child(19),
+body.user-edit-php #your-profile .form-table:nth-child(21){
+	display:none;
+}
+#your-profile .form-table{
+	display:block;
+}
+#your-profile .form-table tbody{
+	display:block;
+	margin-left: -10px;
+	margin-right: -10px
+}
+#your-profile .form-table tbody tr{
+	display:inline-block;
+	width:calc(50% - 2px);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#your-profile .form-table tbody th,
+#your-profile .form-table tbody td{
+	display:block;
+	padding:0;
+	width:100%;
+}
+#your-profile .form-table tbody th{}
+#your-profile .form-table tbody td{}
+#your-profile .form-table tbody th select,
+#your-profile .form-table tbody th input[type=text],
+#your-profile .form-table tbody th input[type=email],
+#your-profile .form-table tbody td input[type=text],
+#your-profile .form-table tbody td input[type=email]{
+	width:100%;
+}
+#your-profile .form-table tbody tr.user-user-login-wrap,
+#your-profile .form-table tbody tr.user-role-wrap,
+#your-profile .form-table tbody tr.user-nickname-wrap,
+#your-profile .form-table tbody tr.user-nickname-wrap,
+#your-profile .form-table tbody tr.user-display-name-wrap,
+#your-profile .form-table tbody tr.user-url-wrap,
+#your-profile .form-table tbody tr.user-facebook-wrap,
+#your-profile .form-table tbody tr.user-twitter-wrap,
+#your-profile .form-table tbody tr.user-linkedin-wrap,
+#your-profile .form-table tbody tr.user-instagram-wrap,
+#your-profile .form-table tbody tr.user-pinterest-wrap,
+#your-profile .form-table tbody tr.user-tumblr-wrap,
+#your-profile .form-table tbody tr.user-googleplus-wrap{
+	display:none;
+}
+
+body.user-edit-php #application-passwords-section{
+	display:none;
+}
+body.user-edit-php #your-profile > h2:nth-child(16){
+	border-top:solid 1px #dcdcde;
+	border-bottom:solid 1px #dcdcde;
+	padding: 1em 0;
+}
+body.user-edit-php #your-profile .form-table:nth-child(14){}
+body.user-edit-php #your-profile .form-table:nth-child(14) tbody{
+	display: table;
+	margin: 0;
+}
+body.user-edit-php #your-profile .form-table:nth-child(14) tbody tr{
+	display: table-row;
+}
+body.user-edit-php #your-profile .form-table:nth-child(14) tbody th{
+	display: table-cell;
+	width:200px;
+	padding: 20px 10px 20px 0;
+}
+body.user-edit-php #your-profile .form-table:nth-child(14) tbody td{
+	display: table-cell;
+	width:auto;
+	margin-bottom: 9px;
+	padding: 15px 10px;
+}
+
+/* .USER */

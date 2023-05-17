@@ -1,0 +1,829 @@
+/* fepa_busca_viagens */
+
+.fepa_busca_viagens,
+.fepa_busca_viagens .wrapper-inner,
+.fepa_busca_viagens .col,
+.fepa_busca_viagens .col-inner-wrapper,
+.fepa_busca_viagens .form-field{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.fepa_busca_viagens .wrapper-inner{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+.fepa_busca_viagens .col{
+	width:100%;
+	padding:8px;
+	display: flex;
+	align-items: stretch;
+}
+.fepa_busca_viagens .col-enderecos{}
+.fepa_busca_viagens .col-separator{
+	display:none;
+}
+.fepa_busca_viagens .col-data{}
+.fepa_busca_viagens .col-button{}
+
+.fepa_busca_viagens .col-inner-wrapper{
+	width: 100%;
+	height: 100%;
+}
+.fepa_busca_viagens .col-inner-wrapper.col-overlay{
+	background:rgba(57, 72, 78, 0.7);
+	border-radius:10px;
+	padding:10px 15px;
+}
+.fepa_busca_viagens .form-field{
+	width: calc(100% - 30px);
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	border: 0;
+	font-size:16px;
+	background:none;
+	box-shadow: none;
+	color:#ffffff;
+	font-weight:600;
+	font-size:18px;
+	width:100%;
+	min-height: auto;
+	height: auto;
+	line-height: 1;
+	padding: 0 0;
+	display: block;
+	
+	-webkit-appearance: none;
+	transition: all 0.25s cubic-bezier(0.700, 0.000, 0.325, 1.000);
+}
+.fepa_busca_viagens .form-field:active,
+.fepa_busca_viagens .form-field:focus{
+	box-shadow:none;
+}
+.fepa_busca_viagens label{
+	padding-top:4px;
+	display: block;
+	line-height: 1;
+	font-weight:600;
+	font-size:14px;
+	color:#ffffff;
+	opacity:0.55;
+}
+.fepa_busca_viagens select.form-field{}
+.fepa_busca_viagens select.form-field option{
+	font-family:inherit;
+}
+
+.fepa_busca_viagens .col-enderecos .col-inner-wrapper{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	position:relative;
+}
+.fepa_busca_viagens .col-enderecos .col-inner{
+	width:50%;
+}
+.fepa_busca_viagens .col-enderecos .col-enderecos-left{
+	padding-right:40px;
+}
+.fepa_busca_viagens .col-enderecos .col-enderecos-right,
+.fepa_busca_viagens .col-enderecos .col-enderecos-right select{
+	text-align:right;
+	padding-left:40px;
+}
+.fepa_busca_viagens .col-enderecos .col-inner-wrapper:after{
+	content:"";
+	width:70px;
+	height:70px;
+	border-radius:100px;
+	position:absolute;
+	left:calc(50% - 35px);
+	top:calc(50% - 35px);
+	background:url(../img/belm-busca-bus.jpg) no-repeat center center #ffffff;
+}
+
+.fepa_busca_viagens .col-data{}
+.fepa_busca_viagens .col-data .col-inner-wrapper{
+	position:relative;
+	padding-right:55px;
+}
+.fepa_busca_viagens .col-data .icon{
+	color: #ffffff;
+	opacity: 0.5;
+	font-size: 26px;
+	position: absolute;
+	right: 10px;
+	top: calc(50% - (30px / 2));
+}
+
+.fepa_busca_viagens .form-submit,
+.fepa_busca_viagens button[type="submit"]:not(.w-btn),
+.fepa_busca_viagens input[type="submit"]{
+	cursor:pointer;
+	width:100%;
+	color:#ffffff;
+	background:#F98732 !important;
+	border:none !important;
+	font-weight:700;
+	text-transform:uppercase;
+	font-size:20px;
+	height: 100%;
+	min-height:60px;
+	border-radius:10px;
+	border:solid 1px #201751;
+	padding: 10px;
+	transition: all 0.25s cubic-bezier(0.700, 0.000, 0.325, 1.000);
+}
+
+.fepa_busca_viagens button[type="submit"]:not(.w-btn):hover,
+.fepa_busca_viagens button[type="submit"]:not(.w-btn):focus,
+.fepa_busca_viagens button[type="submit"]:not(.w-btn):active,
+.fepa_busca_viagens input[type="submit"]:hover,
+.fepa_busca_viagens input[type="submit"]:focus,
+.fepa_busca_viagens input[type="submit"]:active,
+.fepa_busca_viagens .form-submit:hover,
+.fepa_busca_viagens .form-submit:focus,
+.fepa_busca_viagens .form-submit:active{
+	background:#374a8b !important;
+	border:none !important;
+}
+
+.flatpickr-current-month input.cur-year,
+.flatpickr-current-month .flatpickr-monthDropdown-months{
+	min-height: auto;
+	box-shadow: none;
+}
+
+/* SELECT2 */
+.fepa_busca_viagens .select2-container--default .select2-selection--single{
+	background:none;
+	border:none;
+	height: auto;
+	min-height: auto;
+	padding: 0;
+	box-shadow:none;
+}
+.fepa_busca_viagens .select2-container--default .select2-selection--single .select2-selection__rendered{
+	color:#ffffff;
+	font-weight:600;
+	font-size:16px;
+	width:100%;
+	line-height:1.2;
+	height: 40px;
+	padding: 2px 0;
+	white-space: break-spaces;
+}
+.fepa_busca_viagens .select2-container--default .select2-selection--single .select2-selection__arrow{
+	display:none;
+}
+.fepa_busca_viagens .select2-container--open .select2-selection{
+	box-shadow:none;
+}
+.select2-container--open .select2-dropdown--below{
+	border-radius:5px;
+	background:#ffffff;
+	box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+.select2-container--default .select2-search--dropdown .select2-search__field{
+	min-height: auto;
+	height: 40px;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field:focus{
+	border:solid 1px #585858 !important;
+	box-shadow:none;
+}
+.select2-container li.select2-results__option{
+	font-size:14px;
+	font-weight:600;
+	color:#585858;
+}
+/* SELECT2 */
+
+
+@media(min-width:992px){
+	
+	.fepa_busca_viagens .col-enderecos{
+		width:49%;
+	}
+	.fepa_busca_viagens .col-separator{
+		width:2%;
+		display:block;
+	}
+	.fepa_busca_viagens .col-data,
+	.fepa_busca_viagens .col-button{
+		width:calc(49% / 3);
+	}
+	
+	
+}
+
+/* fepa_busca_viagens */
+/*--*/
+/* fepa_excursoes */
+
+.fepa_excursoes{}
+.fepa_excursoes .wrapper-inner{
+	margin-left:-15px;
+	margin-right:-15px;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:stretch;
+	padding:15px 0;
+}
+.fepa_excursoes .col-item{
+	padding:15px;
+	width:100%;
+}
+.fepa_excursoes .col-inner{
+	background:#ffffff;
+	border-radius:15px;
+	position:relative;
+	overflow:hidden;
+	box-shadow:0 0 5px rgba(100,100,100,0.25);
+}
+.fepa_excursoes .thumb{
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	min-height:180px;
+}
+.fepa_excursoes .content{
+	text-align:center;
+	padding:25px;
+	background:#ffffff;
+	margin-top:-10px;
+	position:relative;
+	z-index:10;
+	border-radius:15px;
+	box-shadow:0px -5px 10px rgba(0,0,0,0.25);
+}
+.fepa_excursoes .content h3{
+	color:#FF6900;
+	font-size:24px;
+	line-height:1.2;
+	text-transform:uppercase;
+	margin:0;
+	font-weight:600;
+}
+.fepa_excursoes .content h4{
+	color:#71a55b;
+	font-size:20px;
+	line-height:1.2;
+	margin:0;
+	font-weight:600;
+	min-height:30px;
+}
+
+.fepa_excursoes .content .details{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	align-items: center;
+}
+.fepa_excursoes .content .details .left{
+	width: 50%;
+}
+.fepa_excursoes .content .details .right{
+	width: 50%;
+	position: relative;
+	padding-left: 35px;
+}
+.fepa_excursoes .content .details .right i.fal{
+	position: absolute;
+	left: 0;
+	top: 5px;
+	display: block;
+}
+.fepa_excursoes .content .details span.price{
+	color:#707070;
+	font-size:18px;
+	margin:0;
+	font-weight:600;
+	display:inline-block;
+	line-height:1.2;
+}
+.fepa_excursoes .content .details span.price small{
+	font-style:italic;
+	font-size:60%;
+	font-weight:400;
+	color:#666666;
+	display:block;
+	padding-bottom:3px;
+	padding-top:3px;
+	
+}
+.fepa_excursoes .content .details span.p-p{
+	font-size: 12px;
+	display: block;
+	text-align: left;
+	font-weight: 500;
+	line-height: 1.4;
+}
+.fepa_excursoes .content .details span.p-p span{
+	min-width: 45px;
+	display: inline-block;
+	color: #707070;
+	font-weight: 600;
+}
+.fepa_excursoes .content .details span.p-ida{
+	margin-bottom: 5px;
+}
+.fepa_excursoes .content .details span.p-volta{}
+.fepa_excursoes .f-link{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	display:block;
+	z-index:30;
+}
+@media(min-width:1024px){
+	.fepa_excursoes .wrapper-inner{
+		padding:0;
+	}
+	.fepa_excursoes .col-item{
+		width:calc(100% / 3);
+	}
+}
+
+/* fepa_excursoes */
+/*--*/
+/* fepa_pacotes_promocionais */
+
+.fepa_pacotes_promocionais{}
+.fepa_pacotes_promocionais .wrapper-inner{
+	margin-left:-15px;
+	margin-right:-15px;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:stretch;
+	padding:15px 0;
+}
+.fepa_pacotes_promocionais .col-item{
+	padding:15px;
+	width:100%;
+}
+.fepa_pacotes_promocionais .col-inner{
+	padding:35px 20px 20px;
+	overflow:hidden;
+	border-radius:15px;
+	position:relative;
+	height:100%;
+}
+.fepa_pacotes_promocionais .col-inner:before{
+	content:"";
+	background:rgba(0,0,0,0.75);
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	display:block;
+	z-index:2;
+}
+.fepa_pacotes_promocionais .thumb{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	display:block;
+	z-index:1;
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.fepa_pacotes_promocionais .content{
+	position:relative;
+	z-index:10;
+}
+.fepa_pacotes_promocionais .content h3{
+	color:#ffffff;
+	line-height:1.2;
+	font-size:22px;
+	margin-bottom:20px;
+}
+.fepa_pacotes_promocionais .content h3 small{
+	display:block;
+	margin-bottom:5px;
+	font-size:16px;
+	line-height:1;
+	margin-top:5px;
+}
+.fepa_pacotes_promocionais .content h3 span{
+	display:inline-block;
+	position:relative;
+	text-transform:uppercase;
+}
+
+.fepa_pacotes_promocionais .content .mini-dados{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	align-items: center;
+}
+.fepa_pacotes_promocionais .content .mini-dados .left{
+	width: 100%;
+}
+.fepa_pacotes_promocionais .content .mini-dados .right{
+	width: 100%;
+	position: relative;
+	padding-left: 35px;
+	color:#fff;
+}
+.fepa_pacotes_promocionais .content .mini-dados .right i.fal{
+	position: absolute;
+	left: 0;
+	top: 5px;
+	display: block;
+}
+.fepa_pacotes_promocionais .content .mini-dados span.price{
+	color:#fff;
+	font-size:14px;
+	margin:0;
+	font-weight:600;
+	display:inline-block;
+	line-height:1.2;
+}
+.fepa_pacotes_promocionais .content .mini-dados span.p-p{
+	font-size: 12px;
+	display: block;
+	text-align: left;
+	font-weight: 500;
+	line-height: 1.4;
+}
+.fepa_pacotes_promocionais .content .mini-dados span.p-p span{
+	min-width: 45px;
+	display: inline-block;
+	color: #fff;
+	font-weight: 600;
+}
+.fepa_pacotes_promocionais .content .mini-dados span.p-ida{
+	margin-bottom: 5px;
+}
+.fepa_pacotes_promocionais .content .mini-dados span.p-volta{}
+
+.fepa_pacotes_promocionais .feature{
+	position:relative;
+	z-index:10;
+	color:#fff;
+	margin:10px 0;
+	list-style-position: inside;
+	padding:0;
+}
+.fepa_pacotes_promocionais .feature li{
+	font-size:14px;
+	line-height:1.2;
+	margin:0;
+}
+.fepa_pacotes_promocionais .quartos-precos{
+	position:relative;
+	z-index:10;
+	list-style:none;
+	margin:0;
+	padding:25px 0 0 0;
+}
+.fepa_pacotes_promocionais .quartos-precos li{
+	font-size:36px;
+	line-height:1;
+	font-weight:600;
+	color:#ffffff;
+	margin:0 0 15px 0;
+	padding:0;
+}
+.fepa_pacotes_promocionais .quartos-precos li:last-child{
+	margin-bottom:0;
+}
+.fepa_pacotes_promocionais .quartos-precos small{
+	font-size:18px;
+	color:#F96914;
+	margin-right:5px;
+	display:inline-block;
+}
+.fepa_pacotes_promocionais .quartos-precos .quarto{
+	font-size:14px;
+	text-transform:uppercase;
+	display:block;
+}
+.fepa_pacotes_promocionais .quartos-precos .quarto .pp{
+	display:block;
+	font-weight:400;
+	color:#e5e5e5;
+	font-size:12px;
+	padding-top:3px;
+	text-transform:none;
+}
+
+.fepa_pacotes_promocionais .icons{
+	position: absolute;
+	z-index: 15;
+	right: 10px;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+}
+.fepa_pacotes_promocionais .icons ul{
+	margin:0;
+	padding:10px 0;
+	list-style:none;
+	background:#ffffff;
+	border-radius:100px;
+}
+.fepa_pacotes_promocionais .icons li{
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:calc(21px + 10px);
+	width:calc(25px + 10px);
+	margin:0;
+	padding:10px 10px;
+}
+.fepa_pacotes_promocionais .icons li.transporte{background-image:url(../img/belm-fepa_pacotes_promocionais-icon-transporte.png);}
+.fepa_pacotes_promocionais .icons li.servico-bordo{background-image:url(../img/belm-fepa_pacotes_promocionais-icon-servico-bordo.png);}
+.fepa_pacotes_promocionais .icons li.diarias{background-image:url(../img/belm-fepa_pacotes_promocionais-icon-diarias.png);}
+.fepa_pacotes_promocionais .icons li.janta{background-image:url(../img/belm-fepa_pacotes_promocionais-icon-janta.png);}
+.fepa_pacotes_promocionais .icons li.city-tour{background-image:url(../img/belm-fepa_pacotes_promocionais-icon-city-tour.png);}
+.fepa_pacotes_promocionais .icons li.seguro{background-image:url(../img/belm-fepa_pacotes_promocionais-icon-seguro.png);}
+.fepa_pacotes_promocionais .icons li.guia{background-image:url(../img/belm-fepa_pacotes_promocionais-icon-guia.png);}
+.fepa_pacotes_promocionais .f-link{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	display:block;
+	z-index:30;
+}
+
+.fepa_pacotes_promocionais .infos{
+	display:block;
+	padding-top:25px;
+	color:#fff;
+	font-size:12px;
+	font-style:italic;
+	line-height:1.4;
+}
+.fepa_pacotes_promocionais .infos i{
+	margin-right:5px;
+	font-size:14px;
+}
+
+@media(min-width:992px){
+	.fepa_pacotes_promocionais .col-inner{
+		overflow:hidden;
+		border-radius:15px;
+		position:relative;
+	}
+	.fepa_pacotes_promocionais .col-inner:after{
+		content:"";
+		position:absolute;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		display:block;
+		z-index:3;
+		opacity:0;
+		transition: all 0.25s cubic-bezier(0.700, 0.000, 0.325, 1.000);
+		
+		background: rgb(66,84,143);
+		background: -moz-linear-gradient(-45deg,  rgba(66,84,143,1) 0%, rgba(175,67,119,1) 50%, rgba(240,154,89,1) 100%);
+		background: -webkit-linear-gradient(-45deg,  rgba(66,84,143,1) 0%,rgba(175,67,119,1) 50%,rgba(240,154,89,1) 100%);
+		background: linear-gradient(135deg,  rgba(66,84,143,1) 0%,rgba(175,67,119,1) 50%,rgba(240,154,89,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42548f', endColorstr='#f09a59',GradientType=1 );
+	}
+	.fepa_pacotes_promocionais .col-inner:hover:after{
+		opacity:1;
+	}
+	.fepa_pacotes_promocionais .content h3{
+		font-size:30px;
+	}
+	
+	.fepa_pacotes_promocionais .content .mini-dados .left,
+	.fepa_pacotes_promocionais .content .mini-dados .right{
+		width: 50%;
+	}
+	
+	.fepa_pacotes_promocionais .quartos-precos li{
+		margin:0 0 5px 0;
+		font-size:46px;
+	}
+	.fepa_pacotes_promocionais .quartos-precos .quarto{
+		display:inline-block;
+		vertical-align:middle;
+		margin-left:15px;
+	}
+	.fepa_pacotes_promocionais .quartos-precos small{
+		display:inline-block;
+	}
+	.fepa_pacotes_promocionais .icons{
+		right: 20px;
+	}
+}
+@media(min-width:1024px){
+	.fepa_pacotes_promocionais .wrapper-inner{
+		padding:0;
+	}
+	.fepa_pacotes_promocionais .col-item{
+		width:calc(100% / 2);
+	}
+}
+
+/* fepa_pacotes_promocionais */
+/*--*/
+/* fepa_blog_carrossel */
+
+.fepa_blog_carrossel{}
+.fepa_blog_carrossel .wrapper-inner{
+	position:relative;
+}
+@media(min-width:1024px){
+	.fepa_blog_carrossel .wrapper-inner{
+		margin-top: 200px;
+	}
+	.fepa_blog_carrossel .wrapper-inner:before{
+		content:"";
+		position:absolute;
+		border:solid 50px #f2396f;
+		height:365px;
+		width:650px;
+		top: -150px;
+		border-radius: 15px;
+		left: calc(50% - (365px / 2));
+	}
+}
+@media(min-width:1366px){
+	.fepa_blog_carrossel .wrapper-inner:before{
+		width:750px;
+		height:420px;
+		left: calc(50% - (420px / 2));
+	}
+}
+
+.fepa_blog_carrossel .thumbs-wrapper{
+	position:absolute;
+	top:0;
+	bottom:75px;
+	left:0;
+	right:0;
+	z-index:10;
+}
+.fepa_blog_carrossel .thumbs-wrapper-inner{
+	height: 100%;
+}
+.fepa_blog_carrossel .thumb-item{
+	min-height:330px;
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+@media(min-width:1024px){
+	.fepa_blog_carrossel .thumbs-wrapper{
+		top:0;
+		bottom:0;
+		left:0;
+		right:20%;
+	}
+	.fepa_blog_carrossel .thumb-item{
+		min-height:530px;
+	}
+}
+
+.fepa_blog_carrossel .content-wrapper{
+	padding:150px 25px 0;
+	position:relative;
+	z-index:20;
+}
+.fepa_blog_carrossel .content-flex{
+	width:100%;
+	background:#ffffff;
+	padding:15px;
+	border-radius:15px;
+}
+.fepa_blog_carrossel .content-wrapper-inner{}
+.fepa_blog_carrossel .content-item{}
+.fepa_blog_carrossel .content-item .item-inner{}
+.fepa_blog_carrossel .content-item h3{
+	font-size:22px;
+	font-weight:600;
+	margin-bottom:5px;	
+	color:#F96914;
+	line-height:1.5;
+	text-align:center;
+}
+.fepa_blog_carrossel .content-item .excerpt{}
+.fepa_blog_carrossel .content-item .excerpt p{
+	margin:0;
+	font-size:13px;
+	color:#585858;
+	line-height:1.5;
+	text-align:center;
+}
+@media(min-width:1024px){
+	.fepa_blog_carrossel .content-wrapper{
+		padding:0 0 0 60%;
+		min-height:530px;
+		display:flex;
+		align-items:center;
+	}
+	.fepa_blog_carrossel .content-flex{
+		padding:45px;
+	}
+	
+	.fepa_blog_carrossel .content-item h3{
+		font-size:26px;
+		text-align:left;
+	}
+	.fepa_blog_carrossel .content-item .excerpt p{
+		font-size:14px;
+		text-align:left;
+	}
+}
+
+.fepa_blog_carrossel .content-nav-wrapper{
+	padding-top:15px;
+	text-align:center;
+}
+.fepa_blog_carrossel .content-nav-wrapper a{
+	background:#23AD5A;
+	display:inline-block;
+	height:45px;
+	width:45px;
+	text-align:center;
+	line-height:45px;
+	color:#ffffff;
+	margin:5px;
+	border-radius:100px;
+}
+.fepa_blog_carrossel .content-nav-wrapper i{}
+.fepa_blog_carrossel .content-nav-wrapper .nav-prev{
+	padding-right:3px;
+}
+.fepa_blog_carrossel .content-nav-wrapper .nav-prev i{}
+.fepa_blog_carrossel .content-nav-wrapper .nav-next{
+	padding-left:3px;
+}
+.fepa_blog_carrossel .content-nav-wrapper .nav-next i{}
+.fepa_blog_carrossel .content-nav-wrapper a:hover{
+	background:#585858;
+}
+.fepa_blog_carrossel .content-nav-wrapper a:active i,
+.fepa_blog_carrossel .content-nav-wrapper a:focus i,
+.fepa_blog_carrossel .content-nav-wrapper a:hover i{
+	color:#ffffff;
+}
+@media(min-width:1024px){
+	.fepa_blog_carrossel .content-nav-wrapper{
+		padding-top:35px;
+	}
+}
+
+.fepa_blog_carrossel .link{
+	color:#4860ae;
+	text-decoration:underline;
+	font-size:14px;
+	font-weight:500;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+/* fepa_blog_carrossel */
+/*--*/
+/* BACS */
+
+.woocommerce-page .eltdf-content a.button {
+	height: auto;
+	line-height: 1.4;
+	padding: 5px 15px;
+	border-radius: 5px;
+	margin: 3px;
+}
+.eltdf-woocommerce-page.woocommerce-account .woocommerce table.shop_table th.woocommerce-orders-table__header-order-actions,
+.eltdf-woocommerce-page.woocommerce-account .woocommerce table.shop_table td.woocommerce-orders-table__cell-order-actions{
+	text-align:right;
+}
+.order-bac-enviar-comprovante{
+	padding:25px 0 25px 0;
+	margin-bottom:25px;
+}
+.brc-thankyou-col .order-bac-enviar-comprovante{
+	margin-top:20px;
+	margin-bottom:0;
+	border-top:solid 1px #999999;
+	padding:25px 0 0 0;
+}
+.order-bac-enviar-comprovante .obs{
+	font-size:12px;
+	color:#585858;
+	font-style:italic;
+}
+.order-bac-enviar-comprovante > h2{
+	font-size: 20px;
+	margin-bottom:0 !important;
+}
+
+/* BACS */
+/*--*/

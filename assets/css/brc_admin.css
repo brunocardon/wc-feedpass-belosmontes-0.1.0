@@ -1,0 +1,1616 @@
+/*
+	CORES
+	
+	Pri: #ffa800 -> #d28a00
+	Seg: #0063d2 -> #00499c
+	
+	#201751 azul pontobus
+	#ffcc29 amarelo pontobus
+*/
+
+
+:root {
+ --fpass-primary:#ffa800;
+ --fpass-primary-tilt:#d28a00;
+ --fpass-secondary:#0063d2;
+ --fpass-secondary-tilt:#00499c;
+}
+
+.text-center, 
+.text-center *{
+	text-align:center;
+}
+.text-right, 
+.text-right *{
+	text-align:right !important;
+}
+.text-left, 
+.text-left *{
+	text-align:left !important;
+}
+@media(max-width:767px){
+	.mob-text-center, 
+	.mob-text-center *{text-align:center !important;}
+	.mob-text-center.vc_btn3-container{display:block;}
+}
+
+.wp-core-ui .brc_admin_btn{
+	margin:5px;
+	padding: 6px 8px 2px 8px;
+	background: #0063d2;
+	border-color: #00346f;
+	border-bottom-width:2px;
+	color: #fff;
+	line-height:1;
+	
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wp-core-ui button.brc_admin_btn{
+	padding: 4px 8px 2px 8px;
+}
+.wp-core-ui .brc_admin_btn:hover{
+	background: #00499c;
+	color: #fff;
+}
+.wp-core-ui .brc_admin_btn span{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+}
+.wp-core-ui .brc_admin_btn span.dashicons{
+	height: auto;
+	vertical-align: middle;
+}
+.wp-core-ui .brc_admin_btn span:before{
+	display: block;
+	margin: 0;
+	line-height: 1;
+}
+.wp-core-ui .brc_admin_btn.btn_amarelo,
+.wp-core-ui .brc_admin_btn.action-lista-passageiros{
+	background: #ffa800;
+	border-color: #d28a00;
+	color: #fff;
+}
+.wp-core-ui .brc_admin_btn.btn_amarelo:hover,
+.wp-core-ui .brc_admin_btn.action-lista-passageiros:hover{
+	background: #d28a00;
+}
+.wp-core-ui .brc_admin_btn.btn_vermelho{
+	background: #e21c18;
+	border-color: #b01613;
+}
+.wp-core-ui .brc_admin_btn.btn_vermelho:hover{
+	background: #b01613;
+}
+.wp-core-ui .brc_admin_btn.btn_comprovante{
+	background: #f8dda7;
+	border-color: #7d5300;
+	color:#94660c;
+}
+.wp-core-ui .brc_admin_btn.btn_comprovante:hover{
+	background: #e3c487;
+}
+
+.wp-core-ui .brc_admin_btn.btn_viagem_tipo_bv{
+	background: #4a3f84;
+	border-color: #201751;
+	color:#ffcc29;
+}
+.wp-core-ui .brc_admin_btn.btn_viagem_tipo_grupo{
+	background: #ffe38a;
+	border-color: #ffcc29;
+	color:#201751;
+}
+.wp-core-ui .brc_admin_btn.btn_viagem_tipo_ab{
+	background: #ffffff;
+	border-color: #201751;
+	color:#201751;
+}
+
+.wp-core-ui .brc_admin_btn.btn_viagem_tipo_bv:hover{background: #201751;}
+.wp-core-ui .brc_admin_btn.btn_viagem_tipo_grupo:hover{background: #ffcc29;}
+.wp-core-ui .brc_admin_btn.btn_viagem_tipo_ab:hover{background: #ffffff;}
+
+.wp-core-ui .brc_admin_btn.btn_comprovante_nop{
+	background: #e5e5e5;
+	border-color: #333333;
+	color:#333333;
+	opacity:0.40;
+}
+.wp-core-ui .brc_admin_btn.btn_comprovante_nop:hover{
+	background: #999999;
+}
+.wp-core-ui .brc_admin_btn.btn_whatsapp{
+	background: #00bfa5;
+	border-color: #00a68f;
+}
+.wp-core-ui .brc_admin_btn.btn_whatsapp:hover{
+	background: #00a68f;
+}
+.wp-core-ui .brc_admin_btn.btn_grid{
+	display:block;
+	width:100%;
+	text-align:center;
+	margin: 0;
+	padding: 6px 8px 0px 8px;
+}
+
+.subsubsub a.brc_admin_btn{
+	margin: 0;
+	vertical-align: middle;
+	padding: 4px 6px;
+	min-height: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+.subsubsub a.brc_admin_btn .count{
+	font-weight:inherit;
+	color:inherit;
+}
+
+.wp-core-ui .bullet{
+	display: inline-block;
+	line-height: 1;
+	height: auto;
+	margin: 0 0 5px 0;
+	font-size: inherit;
+	font-weight:600;
+	padding: 3px 8px 5px;
+	background:#0063d2;
+	color:#ffffff;
+	border-radius:5px;
+	font-weight:600;
+}
+.wp-core-ui .bullet:last-child{
+	margin:0;
+}
+.wp-core-ui .bullet span{
+	display: block;
+	margin:0;
+}
+.wp-core-ui .bullet.bullet-primary{
+	background:#ffa800;
+}
+.wp-core-ui .bullet-sm{
+	padding: 2px 5px 3px;
+	border-radius:3px;
+	font-size: 10px;
+	line-height: 1.2;
+	white-space: nowrap;
+}
+.wp-core-ui .bullet.order-status.status-cancelled{
+	background:#b40000;
+	color:#ffffff;
+}
+.t-cancelled{
+	color:#b40000;
+}
+
+.wp-core-ui .bullet.bullet-viagem-bv,
+.wp-core-ui .bullet.bullet-viagem-bv{
+	background:#201751;
+	border:solid 1px #201751;
+	color:#ffcc29;
+}
+.wp-core-ui .bullet.bullet-viagem-grupo{
+	background:#ffcc29;
+	border:solid 1px #ffcc29;
+	color:#201751;
+}
+.wp-core-ui .bullet.bullet-viagem-ab{
+	background:#ffffff;
+	color:#201751;
+	border:solid 1px #201751;
+}
+
+.admin_loading{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	z-index:500000;
+	background:url(../img/torresul-loading.gif) no-repeat center center rgba(100,100,100,0.85);
+	display:none;
+}
+
+/*-------*/
+/* WOOCOMMERCE */
+
+#adminmenu #toplevel_page_woocommerce a.menu-top-first div.wp-menu-image:before{
+	display:none;
+}
+#adminmenu #toplevel_page_woocommerce a.menu-top-first div.wp-menu-image img{
+	padding-top:0;
+	opacity: 1;
+	max-width: 80%;
+	margin: 10%;
+}
+#adminmenu #menu-posts-product a.menu-icon-product div.wp-menu-image:before{
+	content: "\f207" !important;
+	font-family:FontAwesome !important;
+	color:#ffa800;
+	font-size: 19px;
+	line-height: 1.3;
+	font-weight: bold;
+}
+#adminmenu #toplevel_page_edit-post_type-product-metatype-excursoes a.menu-top div.wp-menu-image:before{
+	content: "\f0f2" !important;
+	font-family:FontAwesome !important;
+	color:#ffa800;
+	font-size: 19px;
+	line-height: 1.1;
+	font-weight: bold;
+}
+
+/*-remove barra de admin-*/
+.woocommerce-layout__header{
+	display:none !important;
+}
+.woocommerce-embed-page #screen-meta, 
+.woocommerce-embed-page #screen-meta-links {
+	top: 0 !important;
+}
+
+/* WOOCOMMERCE */
+/*-------*/
+/* CMB2 */
+
+#side-sortables .cmb-th, 
+.inner-sidebar .cmb-th,
+#side-sortables .cmb-group-description .cmb-th, 
+.inner-sidebar .cmb-group-description .cmb-th,
+#side-sortables .cmb-row .cmb2-metabox-description, 
+.inner-sidebar .cmb-row .cmb2-metabox-description{
+	padding-bottom:0 !important;
+}
+#side-sortables .cmb-th label, 
+.inner-sidebar .cmb-th label{
+	margin-bottom:0 !important;
+}
+.cmb-type-group .cmb-remove-field-row, 
+.cmb-type-group .cmb-repeat-group-field, 
+.cmb2-postbox .cmb-remove-field-row, 
+.cmb2-postbox .cmb-repeat-group-field{
+	padding-top:0 !important;
+	padding-bottom: 10px !important;
+	margin-bottom: 15px !important;
+}
+
+/* CMB2 */
+/*-------*/
+/* BRC FORM GRID */
+
+.brc_notices{
+	display:none;
+	padding:15px 20px;
+	border-radius:10px;
+	line-height: 1.2;
+	background-color: #fed2d1;
+	border: 2px solid #ca1916;
+	margin-bottom:20px;
+	color:#ca1916;
+	font-weight:500;
+}
+.brc_notices.on{
+	display:block;
+}
+.brc_notices .lin{
+	display:block;
+	font-weight:600;
+	font-size:14px;
+}
+.brc_notices .lin:last-child{
+	margin-bottom:0;
+}
+
+.brc_form_grid{}
+.brc_form_grid .desc{
+	color:#999999;
+}
+.brc_form_grid h3{
+	margin:0 0 20px 0;
+}
+.brc_form_grid .row{
+	margin-left:-10px;
+	margin-right:-10px;
+}
+.brc_form_grid .col{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.brc_form_grid .col.col-descricao{
+	padding-top:0;
+}
+.brc_form_grid label{
+	display:block;
+	font-weight:600;
+	margin-bottom:5px;
+	color:#282828;
+}
+.brc_form_grid input,
+.brc_form_grid textarea,
+.brc_form_grid select{
+	width:100%;
+	display:block;
+	
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.brc_form_grid input{}
+.brc_form_grid input[type="checkbox"],
+.brc_form_grid input[type="radio"]{
+	width: unset;
+	display: inline-block;
+	vertical-align: middle;
+}
+.brc_form_grid textarea{}
+.brc_form_grid select{}
+.brc_form_grid .data-hora{}
+.brc_form_grid .data-hora select,
+.brc_form_grid .data-hora input{
+	width: calc(60% - 8px);
+	display: inline-block;
+	margin:0;
+}
+.brc_form_grid .data-hora select:last-child,
+.brc_form_grid .data-hora input:last-child{
+	width: calc(40% - 8px);
+	text-align:center;
+	margin-left:10px;
+}
+
+.brc_form_grid_inner_table{
+	border: solid 1px #e5e5e5;
+	background:#ffffff;
+	margin-bottom:25px;
+}
+.brc_form_grid_inner_table > h3{
+	font-size:14px;
+	font-weight:600;
+	padding:10px;
+	margin:0;
+	line-height:1.2;
+	color:#282828;
+	border-bottom:solid 2px #e5e5e5;
+}
+.brc_form_grid_inner_table > h3 a.btn_grid{
+	display: inline-block !important;
+	margin-left:15px !important;
+	vertical-align: middle;
+	width: auto !important;
+	padding: 3px 8px 2px 2px !important;
+	height: auto;
+	min-height: 0 !important;
+}
+.brc_form_grid_inner_table_body{
+	padding:5px 10px;
+	position:relative;
+}
+
+.brc_form_grid .produto-tipo-descricao{
+	display:none;
+}
+.brc_form_grid .produto-tipo-descricao.on{
+	display:block;
+}
+
+
+/* BRC FORM GRID */
+/*-------*/
+/* BRC LIST ADMIN */
+
+.attr-bullet{
+	display: inline-block;
+	line-height: 1.2;
+	height: auto;
+	margin: 0 0 5px 0;
+	font-size: inherit;
+	font-weight:600;
+	padding:0;
+	background:#ffffff;
+	color:#0063d2;
+	border-radius:5px;
+	border:solid 1px #0063d2;
+	font-weight:600;
+	overflow:hidden;
+	margin:2px 5px;
+	vertical-align:middle;
+}
+.attr-bullet .label{
+	padding: 3px 4px 6px 8px;
+	display: inline-block;
+}
+.attr-bullet .value{
+	padding: 3px 8px 6px 4px;
+	display: inline-block;
+	background:#0063d2;
+	color:#ffffff;
+	min-width: 18px;
+	text-align: center;
+}
+
+.brc_list_legendas{
+	clear: both;
+	display: block;
+	float: left;
+	padding-top: 4px;
+	margin-bottom:10px;
+}
+.brc_list_legendas ul{
+	margin:0;
+	display:block;
+}
+.brc_list_legendas li{
+	display: inline-block;
+	margin: 0;
+	padding: 4px 4px 4px 0;
+	font-size: 12px;
+}
+.brc_list_legendas li:after{
+	content: "|";
+	margin-left: 7px;
+	font-weight: 600;
+	color: #000;
+}
+.brc_list_legendas li:last-child:after{
+	display:none;
+}
+.brc_list_legendas li span{
+	margin-right: 2px;
+	display: inline-block;
+	vertical-align: middle;
+	padding:2px 3px 4px;
+	background: #0f0;
+	font-size: 10px;
+	border-radius:3px;
+	color:#ffffff;
+}
+.brc_list_legendas li span.fa-clipboard{
+	background:#ffa800;
+	border:solid 1px #d28a00;
+}
+.brc_list_legendas li span.fa-ticket{
+	background:#0063d2;
+	border:solid 1px #00499c;
+}
+.brc_list_legendas li span.fa-file-pdf-o{
+	background:#0063d2;
+	border:solid 1px #00499c;
+}
+.brc_list_legendas li span.fa-file-text-o{
+	background:#f8dda7;
+	color:#94660c;
+	border:solid 1px #94660c;
+}
+.brc_list_legendas li span.fa-whatsapp{
+	background:#00bfa5;
+	border:solid 1px #00a68f;
+}
+
+
+/* BRC LIST ADMIN */
+/*-------*/
+/* PRODUCT */
+
+body.post-type-product #edit-slug-box, 
+body.post-type-product #minor-publishing-actions, 
+body.post-type-product #visibility, 
+body.post-type-product #misc-publishing-actions, 
+body.post-type-product #duplicate-action, 
+body.post-type-product #delete-action, 
+body.post-type-product .num-revisions, 
+body.post-type-product .curtime{
+	display: none;
+}
+body.post-type-product #submitdiv{
+	box-shadow: none;
+	background: no-repeat;
+	border: none;
+}
+body.post-type-product #submitdiv .handlediv,
+body.post-type-product #submitdiv .postbox-header,
+body.post-type-product #submitdiv .hndle{
+	display:none;
+}
+body.post-type-product #submitdiv #major-publishing-actions{
+	border-top: none;
+	background: transparent;
+	padding: 0;
+}
+body.post-type-product #submitdiv #publishing-action{
+	text-align: left;
+	float: none;
+	line-height: 1.9;
+}
+body.post-type-product #submitdiv #publishing-action .spinner{
+	float:right;
+}
+body.post-type-product #submitdiv #major-publishing-actions input{
+	font-size: 22px;
+	padding: 0 40px;
+	text-transform: uppercase;
+}
+
+#brc_product_clientes{
+	border-color:#0063d2;
+	border-width:2px;
+}
+#brc_product_clientes .toggle-indicator,
+#brc_product_clientes .postbox-header{
+	color:#ffffff;
+	background:#0063d2;
+}
+#brc_product_clientes .postbox-header h2{
+	color:#ffffff;
+}
+
+#brc_product_edit{
+	border-color:#201751;
+	border-width:2px;
+}
+#brc_product_edit .toggle-indicator,
+#brc_product_edit .postbox-header{
+	color:#ffcc29;
+	background:#201751;
+}
+#brc_product_edit .postbox-header h2{
+	color:#ffcc29;
+}
+
+#brc_product_grupo{
+	border-color:#ffcc29;
+	border-width:2px;
+}
+#brc_product_grupo .toggle-indicator,
+#brc_product_grupo .postbox-header{
+	color:#201751;
+	background:#ffcc29;
+}
+#brc_product_grupo .postbox-header h2{
+	color:#201751;
+}
+
+#brc_product_ab{
+	border-color:#ffffff;
+	border-width:2px;
+}
+#brc_product_ab .toggle-indicator,
+#brc_product_ab .postbox-header{
+	color:#201751;
+	background:#ffffff;
+}
+#brc_product_ab .postbox-header h2{
+	color:#201751;
+}
+
+#brc_prod_roteiro .cmb-field-list{}
+#brc_prod_roteiro .cmb-field-list .cmb-row{
+	display: inline-block;
+	width: 100%;
+}
+#brc_prod_roteiro .cmb-field-list .cmb-row.cmb2-id-roteiro-group-0-etapa-nome,
+#brc_prod_roteiro .cmb-field-list .cmb-row.cmb2-id-roteiro-group-0-etapa-titulo{
+	width:calc(50% - 8px);
+	margin-left:15px;
+}
+#brc_prod_roteiro .cmb-field-list .cmb-row.cmb2-id-roteiro-group-0-etapa-nome{
+	margin-left:0;
+}
+#brc_prod_roteiro .cmb-field-list .cmb-row.cmb2-id-roteiro-group-0-etapa-titulo{}
+#brc_prod_roteiro .cmb-field-list .cmb-row.cmb2-id-roteiro-group-0-etapa-desc{}
+
+#brc_prod_roteiro .cmb2-wrap textarea{
+	width:100%;
+}
+
+#brc_product_ab,
+#brc_product_grupo,
+#brc_product_edit{
+	background: #f9f9f9;
+}
+#brc_product_ab .brc_form_grid,
+#brc_product_grupo .brc_form_grid,
+#brc_product_edit .brc_form_grid{
+	padding:0 10px;
+}
+#brc_product_ab ._child,
+#brc_product_grupo ._child,
+#brc_product_edit ._child,
+#brc_product_ab ._ingresso,
+#brc_product_grupo ._ingresso,
+#brc_product_edit ._ingresso{
+	display:none;
+}
+@media(min-width:768px){
+	body.post-type-product #radio-brc_veiculodiv:not(.hide-if-js),
+	body.post-type-product #radio-brc_motoristadiv:not(.hide-if-js),
+	body.post-type-product #brc_prod_hospedagem:not(.hide-if-js),
+	body.post-type-product #brc_prod_roteiro:not(.hide-if-js),
+	body.post-type-product #brc_prod_banner:not(.hide-if-js),
+	body.post-type-product #postimagediv:not(.hide-if-js){
+		width:calc((100% - 28px) / 2);
+		display:inline-block;
+		vertical-align:top;
+		margin-left:20px;
+	}
+	body.post-type-product #radio-brc_veiculodiv,
+	body.post-type-product #brc_prod_hospedagem,
+	body.post-type-product #postimagediv{
+		margin-left:0 !important;
+	}
+}
+
+table .cel.passageiro{}
+table .cel.cpf{}
+table .cel.cliente{}
+table .cel.poltrona{}
+table .cel.quarto{}
+table .cel.hotel{}
+table .cel.ingresso{}
+table .cel.pedido{}
+table .cel.emissao{}
+table .cel.valor{
+	vertical-align:middle;
+}
+
+#TB_overlay.brc_tb_distribuir_quartos_overlay{
+	z-index: 150150;
+}
+#TB_window.brc_tb_distribuir_quartos{
+	z-index: 150160;
+	width: auto !important;
+	left: 25px;
+	margin: 0 !important;
+	right: 25px;
+	bottom: 25px !important;
+	top: 25px !important;
+	height: auto !important;
+	overflow: unset;
+}
+#TB_window.brc_tb_distribuir_quartos #TB_ajaxContent{
+	padding:30px 30px 0 30px;
+	display:flex;
+	height:calc(100% - 30px);
+	overflow: unset;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#tb-distribuir-quartos,
+#tb-distribuir-quartos-form,
+#tb-distribuir-assentos,
+#tb-distribuir-assentos-form{
+	height:100%;
+}
+
+.brc-sortable-area{
+	width: 100%;
+}
+.brc-sortable-area .phover{
+	padding:10px;
+	background:#e5e5e5;
+}
+
+.brc-sortable-area .container-wrapper{
+	display:flex;
+	flex-wrap:wrap;
+	margin:0 -25px;
+	align-items: baseline;
+	height:100%;
+}
+.brc-sortable-area .container-col{
+	padding:0 25px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.brc-sortable-area .container-col-inner{}
+.brc-sortable-area .container-col-left{
+	width:25%;
+	height: 100%;
+	overflow-y: auto;
+}
+.brc-sortable-area .container-col-left .container-col-inner{}
+.brc-sortable-area .container-col-right{
+	width: 75%;
+	height: 100%;
+	overflow-y: auto;
+}
+.brc-sortable-area .container-col-right .container-col-inner{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin: 0 -10px 25px;
+	padding-bottom: 25px;
+	border-bottom: solid 1px #999999;
+	
+}
+.brc-sortable-area .sortable-destino-wrapper{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	flex: 0 0 25%;
+}
+.brc-sortable-area .sortable-destino{}
+
+.brc-sortable-area .destino-label{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 10px;
+	display: block;
+	margin-bottom: 5px;
+	text-align:center;
+}
+.brc-sortable-area .destino-label input{
+	font-weight: 400;
+	min-height: 10px;
+	display: inline-block;
+	vertical-align:middle;
+	font-size: 12px;
+	width: 50px;
+}
+.brc-sortable-area .destino-label .fa{
+	margin:0 5px 0 10px;
+	font-size:16px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.brc-sortable-area .container-title{
+	margin:0 0 5px 0;
+}
+.brc-sortable-area .container-desc{
+	margin: 0 0 15px 0;
+	padding: 0 !important;
+}
+.brc-sortable-area .sortable-container{
+	min-height:75px;
+	border:dashed 2px #999;
+	margin-bottom:10px;
+	background:#f9f9f9;
+	margin:0;
+	padding:15px;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.brc-sortable-area .sortable-container:hover{
+	border-color:#0063d2;
+}
+.brc-sortable-area .sortable-item{
+	padding:2px;
+}
+.brc-sortable-area .sortable-item .handle{
+	background:#ffffff;
+	border:solid 1px #e5e5e5;
+	border-bottom-width:2px;
+	border-radius:3px;
+	line-height:1.2;
+	padding:3px 8px;
+	cursor:pointer;
+	color:#282828;
+	display:block;
+}
+.brc-sortable-area .sortable-item .handle:hover{
+	background:#f1f1f1;
+}
+.brc-sortable-area .sortable-item.ui-sortable-helper .handle{
+	background:#0063d2;
+	color:#ffffff;
+	border-color:#1a1a1a;
+}
+.brc-sortable-area .sortable-dados{
+	border:none;
+	background:none;
+	min-height:auto;
+	padding:0;
+	padding-bottom: 25px;
+	border-bottom: solid 1px #999999;
+	margin-bottom: 25px;
+}
+.brc-sortable-area .sortable-dados .sortable-item{
+	display:inline-block;
+}
+.brc-sortable-area .sortable-dados .sortable-item .handle{}
+
+#tb-distribuir-assentos{}
+#tb-distribuir-assentos .container-col-right .container-col-inner{
+	justify-content: center;
+	border:none;
+	margin-bottom:0;
+}
+#tb-distribuir-assentos .sortable-destino-wrapper{
+	flex: 0 0 calc(100% / 2);
+}
+#tb-distribuir-assentos .sortable-assento-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	border: solid 1px #999;
+	border-radius: 10px;
+	background: #f9f9f9;
+}
+#tb-distribuir-assentos .sortable-assento-item-wrapper{
+	flex: 0 0 calc(100% / 4);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5px;
+	position:relative;
+}
+#tb-distribuir-assentos .assento-num{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background: #999;
+	color: #fff;
+	line-height: 1;
+	padding: 1px 4px 2px;
+	border-radius: 0 0 5px 0;
+	font-size: 11px;
+}
+#tb-distribuir-assentos .sortable-assento{
+	min-height: 40px;
+	padding: 5px;
+	background: #fff;
+	border-width:1px;
+}
+#tb-distribuir-assentos .sortable-assento:hover{
+	border-color:#0063d2;
+}
+#tb-distribuir-assentos .sortable-assento .sortable-item{
+	margin:0;
+}
+#tb-distribuir-assentos .sortable-assento .handle{
+	font-size:12px;
+	display:block;
+	text-align:center;
+}
+
+#tb-distribuir-assentos .container-col-right.oleito{}
+#tb-distribuir-assentos .container-col-right.oleito .sortable-destino-wrapper{
+	flex: 0 0 calc(100% / 3);
+}
+#tb-distribuir-assentos .container-col-right.oleito .sortable-assento-item-wrapper{
+	flex: 0 0 calc(100% / 3);
+}
+
+#brc_add_product_excursao_variations{}
+#brc_add_product_excursao_variations .row{
+	margin-left:-5px;
+	margin-right:-5px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: dashed 2px #e5e5e5;
+}
+#brc_add_product_excursao_variations .row .col{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+/*-viagens-*/
+
+.post-type-product #wpb_visual_composer.hide-if-js{
+	display:none !important;
+}
+.masscad{
+	display:none;
+}
+.uniquecad{
+	display:block;
+}
+
+/* PRODUCT */
+/*-------*/
+/* PRODUCT LIST */
+
+.post-type-product td{
+	vertical-align:middle;
+}
+.post-type-product td.column-ex_data{
+	font-weight:600;
+}
+
+.post-type-product th.column-ex_data,
+.post-type-product td.column-ex_data{}
+
+.post-type-product th.column-ex_quartos,
+.post-type-product td.column-ex_quartos{
+	width:25%;
+}
+
+.quartos-table{
+	border-spacing: 0;
+	border: solid 1px var(--fpass-secondary-tilt);
+	width:100%;
+}
+.quartos-table th,
+.quartos-table td{
+	padding: 2px 5px;
+	border: solid 1px var(--wc-secondary);
+	font-size:12px;
+}
+.quartos-table th{
+	font-weight:600;
+}
+.quartos-table th.nome,
+.quartos-table td.nome{
+	min-width:50%;
+}
+.quartos-table th.quantidade,
+.quartos-table td.quantidade,
+.quartos-table th.preco,
+.quartos-table td.preco{
+	text-align:center;
+	min-width:25%;
+}
+
+
+.quartos-table tr:nth-child(2n) td{background:#ffffff;}
+#the-list .quartos-table tr:last-child th,
+#the-list .quartos-table tr:last-child td{border-bottom: solid 1px var(--fpass-secondary-tilt) !important;}
+
+.post-type-product th.column-ex_ingressos,
+.post-type-product td.column-ex_ingressos{
+	text-align:center;
+}
+.post-type-product td.column-ex_ingressos .fa{
+	font-size:17px;
+}
+.post-type-product td.column-ex_ingressos .fa-times{
+	color:#b1010a;
+}
+.post-type-product td.column-ex_ingressos .fa-check{
+	color:#33b101;
+}
+
+.post-type-product th.column-ex_actions,
+.post-type-product td.column-ex_actions{
+	text-align:right;
+}
+
+.post-type-product .wp-list-table tbody tr:hover{}
+.post-type-product .wp-list-table tbody tr:hover td.column-ex_data{
+	color:#0063d2;
+}
+
+/*-viagens-*/
+
+.post-type-product td.column-vi_data{}
+.post-type-product td.column-vi_data span{
+	display:block;
+	font-weight:600;
+}
+.post-type-product td.column-vi_data span.horarios-embarque{
+	color:#4c4b4c;
+}
+.post-type-product td.column-vi_data span.horarios-desembarque{
+	color:#828182;
+}
+.post-type-product td.column-vi_locais{}
+.post-type-product td.column-vi_locais span{
+	display:block;
+	font-weight:600;
+}
+.post-type-product td.column-vi_locais span.destinos-embarque{
+	color:#4c4b4c;
+}
+.post-type-product td.column-vi_locais span.destinos-desembarque{
+	color:#828182;
+}
+
+.post-type-product .wp-list-table tbody tr:hover td.column-vi_data span.horarios-embarque,
+.post-type-product .wp-list-table tbody tr:hover td.column-vi_locais span.destinos-embarque{
+	color:#ffa800;
+}
+.post-type-product .wp-list-table tbody tr:hover td.column-vi_data span.horarios-desembarque,
+.post-type-product .wp-list-table tbody tr:hover td.column-vi_locais span.destinos-desembarque{
+	color:#0063d2;
+}
+
+.post-type-product td.column-vi_stock,
+.post-type-product td.column-price{
+	vertical-align:middle;
+}
+.post-type-product td.column-price .amount{
+	font-size:18px;
+	font-weight:600;
+	color:#ffa800;
+}
+.post-type-product td.column-vi_stock{
+	font-size:18px;
+	color:#828182;
+}
+.post-type-product td.column-vi_stock span{}
+.post-type-product td.column-vi_stock span.assentos-stock{
+	color:#ffa800;
+}
+.post-type-product td.column-vi_stock span.assentos-total{}
+.post-type-product td.column-vi_stock span.assentos-stock-full{
+	color:#828182;
+}
+.post-type-product td.column-vi_stock span.assentos-stock-less{}
+.post-type-product td.column-actions{
+	text-align:right;
+}
+
+.post-type-product .column-vi_actions{
+	text-align:right;
+}
+
+.post-type-product .wp-list-table #name.manage-column{
+	width:25%;
+}
+.post-type-product .wp-list-table #vi_stock.manage-column{
+	width:5%;
+}
+.post-type-product .wp-list-table #price.manage-column{
+	width:9%;
+}
+
+/* PRODUCT LIST */
+/*-------*/
+/* GENERAL POST EDIT  */
+
+.brc-admin-table{
+	width: 100%;
+	border: solid 1px #e5e5e5;
+	margin: 10px 0 25px 0;
+	border-collapse: collapse;
+	padding:5px;
+	border-spacing: 0;
+	background:#ffffff;
+}
+.brc-admin-table th,
+.brc-admin-table td{
+	padding:6px 8px 6px;
+	line-height:1.2;
+	color:#585858;
+	font-weight:400;
+	font-size:12px;
+	vertical-align:top;
+	text-align:center;
+}
+.brc-admin-table th{}
+.brc-admin-table td{}
+.brc-admin-table .hash{
+	width:20px;
+	font-weight:600;
+}
+
+.brc-admin-table thead{}
+.brc-admin-table thead tr{}
+.brc-admin-table thead th,
+.brc-admin-table thead td{
+	font-size:14px;
+	font-weight:600;
+	padding:10px;
+	color:#282828;
+	border-bottom:solid 2px #e5e5e5;
+}
+.brc-admin-table thead th{}
+.brc-admin-table thead td{}
+.brc-admin-table tbody{}
+.brc-admin-table tbody tr{}
+.brc-admin-table tbody th,
+.brc-admin-table tbody td{}
+.brc-admin-table tbody th{}
+.brc-admin-table tbody td{}
+.brc-admin-table tbody tr:nth-child(2n+1) td{
+	background:#f5f5f5;
+}
+.brc-admin-table tfoot{}
+.brc-admin-table tfoot tr{}
+.brc-admin-table tfoot th,
+.brc-admin-table tfoot td{
+	background:#ffffff;
+	font-size:14px;
+	font-weight:600;
+	/*border:solid 1px #cccccc;*/
+	border-top:solid 1px #e5e5e5;
+	padding:8px 10px 10px;
+}
+.brc-admin-table tfoot th{}
+.brc-admin-table tfoot td{}
+
+/* GENERAL POST EDIT  */
+/*-------*/
+/* ORDER LIST */
+
+.post-type-shop_order th.column-viagens,
+.post-type-shop_order td.column-viagens{
+	width:40% !important;
+}
+.post-type-shop_order th.column-order_total.sortable a,
+.post-type-shop_order th.column-order_total,
+.post-type-shop_order td.column-order_total,
+.post-type-shop_order th.column-order_date.sortable a,
+.post-type-shop_order th.column-order_date,
+.post-type-shop_order td.column-order_date{
+	text-align:center !important;
+}
+.post-type-shop_order th.column-order_total,
+.post-type-shop_order td.column-order_total,
+.post-type-shop_order th.column-order_date,
+.post-type-shop_order td.column-order_date{
+	width:10% !important;
+}
+.post-type-shop_order th.column-order_total.sortable a span,
+.post-type-shop_order th.column-order_date.sortable a span{
+	display:inline-block;
+	float:none;
+	vertical-align: middle;
+}
+.post-type-shop_order td.column-order_total .amount{
+	font-size:18px;
+	font-weight:600;
+	color:#ffa800;
+}
+.post-type-shop_order th.column-detalhes_reserva,
+.post-type-shop_order td.column-detalhes_reserva{
+	width:10% !important;
+}
+
+.post-type-shop_order th.column-produto, 
+.post-type-shop_order td.column-produto {
+	width: 40% !important;
+}
+.post-type-shop_order .column-produto .brc-admin-table{
+	margin:5px 0 10px 0;
+	border-bottom-width: 2px;
+}
+.post-type-shop_order .column-produto .brc-admin-table tbody td{
+	padding: 6px 8px !important;
+	line-height: 1.2;
+	width:33.3334%;
+}
+.post-type-shop_order .column-produto .brc-admin-table tbody td:nth-child(1){
+	width:35%;
+}
+.post-type-shop_order .column-produto .brc-admin-table tbody td:nth-child(2){
+	width:10%;
+}
+.post-type-shop_order .column-produto .brc-admin-table tbody td:nth-child(3){
+	width:35%;
+}
+.post-type-shop_order .column-produto .brc-admin-table tbody td:nth-child(4){
+	width:20%;
+}
+.post-type-shop_order .column-produto .bullet{
+	margin-bottom:0;
+	margin-right:10px;
+}
+.post-type-shop_order .column-produto .bullet *{
+	white-space: nowrap;
+}
+.post-type-shop_order .column-produto .bullet.bullet-viagem{
+	background:#d28a00;
+}
+.post-type-shop_order .column-produto .bullet.bullet-excursao{
+	background:#00499c;
+}
+
+
+.post-type-shop_order .wp-list-table tbody td.column-order_actions, 
+.post-type-shop_order .wp-list-table tbody th.column-order_actions,
+.post-type-shop_order th.column-order_actions,
+.post-type-shop_order td.column-order_actions{
+	text-align:right;
+	padding-right:0;
+}
+.post-type-shop_order .wp-list-table td.column-brcpasstour_notification,
+.post-type-shop_order .wp-list-table th.column-brcpasstour_notification,
+.post-type-shop_order th.column-brcpasstour_notification,
+.post-type-shop_order td.column-brcpasstour_notification{
+	text-align:right;
+	width:5px;
+	padding-left:0;
+}
+
+#comprovante_show{}
+#comprovante_show img{
+	max-width:100%;
+	height:auto;
+}
+
+
+/* ORDER LIST */
+/*-------*/
+/* ORDER EDITOR */
+
+h1.big-title-order{
+	font-size:45px;
+	font-weight:600;
+	color:#000000;
+}
+h1.big-title-order.excursao{color:#00499c;}
+h1.big-title-order.viagem{color:#d28a00;}
+
+.post-type-shop_order #post .action-comprovante{
+	display:block;
+}
+.post-type-shop_order #post .action-comprovante img{
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+#brc_order_edit_comprovante{
+	background: #fff0d1;
+	border: 1px solid #94660c;
+	color:#94660c;
+}
+#brc_order_edit_comprovante *{
+	color:#94660c;
+}
+#brc_order_edit_comprovante.postbox .hndle{
+	border-bottom: 1px solid #94660c;
+}
+
+#brc_order_add_excursao{
+	background: #f9f9f9;
+	border: 1px solid #00499c;
+	border-bottom-width:2px;
+}
+#brc_order_add_excursao.postbox .handlediv .toggle-indicator:before{
+	color:#ffffff;
+}
+#brc_order_add_excursao.postbox .hndle{
+	border-bottom: 1px solid #00499c;
+	color:#ffffff;
+	background: #00499c;
+}
+
+#brc_order_add_viagem.postbox{
+	background: #f9f9f9;
+	border: 1px solid #d28a00;
+	border-bottom-width:2px;
+}
+#brc_order_add_viagem.postbox .postbox-header h2{
+	color:#ffffff;
+}
+#brc_order_add_viagem.postbox .toggle-indicator,
+#brc_order_add_viagem.postbox .postbox-header{
+	border-bottom: 1px solid #d28a00;
+	color:#ffffff;
+	background: #d28a00;
+}
+/**/
+#brc_order_add_viagem.postbox._title-bv{
+	border-color:#201751;
+}
+#brc_order_add_viagem.postbox._title-bv .postbox-header h2{
+	color:#ffcc29;
+}
+#brc_order_add_viagem.postbox._title-bv .toggle-indicator,
+#brc_order_add_viagem.postbox._title-bv .postbox-header{
+	border-bottom: 1px solid #201751;
+	color:#ffcc29;
+	background: #201751;
+}
+/**/
+/**/
+#brc_order_add_viagem.postbox._title-grupo{
+	border-color:#201751;
+}
+#brc_order_add_viagem.postbox._title-grupo .postbox-header h2{
+	color:#201751;
+}
+#brc_order_add_viagem.postbox._title-grupo .toggle-indicator,
+#brc_order_add_viagem.postbox._title-grupo .postbox-header{
+	border-bottom: 1px solid #201751;
+	color:#201751;
+	background: #ffcc29;
+}
+/**/
+#brc_order_add_viagem.postbox._title-ab{
+	border-color:#201751;
+}
+#brc_order_add_viagem.postbox._title-ab .postbox-header h2{
+	color:#201751;
+}
+#brc_order_add_viagem.postbox._title-ab .toggle-indicator,
+#brc_order_add_viagem.postbox._title-ab .postbox-header{
+	border-bottom: 1px solid #201751;
+	color:#201751;
+	background: #ffffff;
+}
+
+/* ORDER EDITOR */
+/*-------*/
+/* NOTIFICATIONS */
+
+.brcpasstour_notification_tags{}
+.brcpasstour_notification_tags .brc-admin-table{}
+.brcpasstour_notification_tags .brc-admin-table th{
+	text-align:left;
+	font-size:18px;
+}
+.brcpasstour_notification_tags .brc-admin-table td{
+	text-align:left;
+	font-size:16px;
+}
+.brcpasstour_notification_sms{
+	padding-top:35px;
+}
+.brcpasstour_notification_sms .lin-mensagem{
+	margin-bottom:35px;
+	padding-bottom:35px;
+	border-bottom:solid 1px #e5e5e5;
+}
+.brcpasstour_notification_sms .col-right{}
+.brcpasstour_notification_sms .lin-cellphone{
+	display: flex;
+	margin: 0 -15px;
+}
+.brcpasstour_notification_sms .lin-cellphone .col{
+	flex:0 0 calc(50% - 30px);
+	padding: 15px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.brcpasstour_notification_sms .lin-cellphone .col-left{}
+.brcpasstour_notification_sms .lin-cellphone .col-right{}
+.brcpasstour_notification_sms h2{}
+.brcpasstour_notification_sms h3 {
+	margin: 0 0 10px 0;
+}
+.brcpasstour_notification_sms .desc {
+	margin: 0 0 15px 0;
+	font-size: 13px;
+	color: #585858;
+	padding: 0 !important;
+}
+.brcpasstour_notification_sms .send-wrapper{}
+.brcpasstour_notification_sms .mensagem_count{
+	color:#d28a00;
+}
+.brcpasstour_notification_sms .tags{}
+.brcpasstour_notification_sms .tags a{
+	display:inline-block;
+	margin:3px;
+	padding:4px 8px 5px;
+	line-height:1;
+	border-radius:3px;
+	background:#0063d2;
+	text-decoration:none;
+	color:#ffffff;
+}
+.brcpasstour_notification_sms .tags a:hover{
+	background:#00499c;
+}
+#notification_sms_cellphone {
+	padding: 10px;
+	width: 100%;
+	min-height: 150px;
+	margin-bottom: 10px;
+}
+#notification_sms_mensagem{
+	width: 100%;
+	min-height: 150px;
+}
+
+/* NOTIFICATIONS */
+/* CUSTOM TAXONOMIES */
+
+body[class*="taxonomy-brc_"] #col-container #col-left,
+body[class*="taxonomy-brc_"] #col-container #col-right{width:100%;}
+body[class*="taxonomy-brc_"] .term-display-type-wrap, /* FORM IMPREZA THEME */
+body[class*="taxonomy-brc_"] .term-description-wrap,
+body[class*="taxonomy-brc_"] .term-slug-wrap{display:none;}
+body[class*="taxonomy-brc_"] table.wp-list-table .column-posts{width:80px;text-align:center;}
+body[class*="taxonomy-brc_"] table.wp-list-table .column-cb{width:35px;}
+body[class*="taxonomy-brc_"] table.wp-list-table #name.column-name{width:auto;}
+body[class*="taxonomy-brc_"] table.wp-list-table th.column-posts a{
+	text-align:center;
+}
+body[class*="taxonomy-brc_"] table.wp-list-table th.column-posts span{
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+body[class*="taxonomy-brc_"] table.wp-list-table th.column-posts span.sorting-indicator{
+	margin-top: 0;
+}
+body[class*="taxonomy-brc_"] #col-container #col-left{
+	padding-left:6px;
+}
+body[class*="taxonomy-brc_"] #col-container #col-left .col-wrap{
+	margin-top:25px;
+	margin-bottom:25px;
+	background:#ffffff;
+	border:solid 1px #c3c4c7;
+	border-radius:10px;
+	padding:10px 25px;
+}
+body[class*="taxonomy-brc_"] #col-container #col-left h2{
+	font-size:24px;
+}
+
+
+body.taxonomy-brc_cidade{}
+body.taxonomy-brc_cidade .form-wrap form{
+	display:flex;
+	flex-wrap:wrap;
+}
+body.taxonomy-brc_cidade .term-name-wrap,
+body.taxonomy-brc_cidade .term-brc_uf-wrap,
+body.taxonomy-brc_cidade .submit{
+	width:100%;
+}
+@media(min-width:992px){
+	body.taxonomy-brc_cidade .term-name-wrap{
+		width:75%;
+	}
+	body.taxonomy-brc_cidade .term-brc_uf-wrap{
+		width:25%;
+	}
+}
+
+
+body.taxonomy-brc_ponto_embarque{}
+body.taxonomy-brc_ponto_embarque .form-wrap form{
+	display:flex;
+	flex-wrap:wrap;
+}
+body.taxonomy-brc_ponto_embarque .term-name-wrap,
+body.taxonomy-brc_ponto_embarque .term-brc_cidade-wrap,
+body.taxonomy-brc_ponto_embarque .submit{
+	width:100%;
+}
+@media(min-width:992px){
+	body.taxonomy-brc_ponto_embarque .term-name-wrap{
+		width:75%;
+	}
+	body.taxonomy-brc_ponto_embarque .term-brc_cidade-wrap{
+		width:25%;
+	}
+}
+
+
+body.taxonomy-brc_linha_viagem{}
+#linhas-pontos-add{
+	float: right;
+	display: block;
+	width: 25px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	background: #0063d2;
+	color: #ffffff;
+	font-size: 14px;
+	border-radius: 5px;
+}
+#linhas-pontos-add:hover{
+	background: #00499c;
+}
+#linhas-pontos-wrapper{
+	border-top: solid 1px #c3c4c7;
+	border-left: solid 1px #c3c4c7;
+}
+
+#linhas-pontos-wrapper .lin{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:stretch;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+#lin-itens-wrapper{
+	margin:0;
+	padding:0;
+}
+#linhas-pontos-wrapper .lin .col{
+	border-bottom: solid 1px #c3c4c7;
+	border-right: solid 1px #c3c4c7;
+	box-sizing: border-box;
+}
+#linhas-pontos-wrapper .lin .col-drag{width: 25px;}
+#linhas-pontos-wrapper .lin .col-ponto{width: calc(70% - 25px);}
+#linhas-pontos-wrapper .lin .col-horario{width: calc(10%);}
+#linhas-pontos-wrapper .lin .col-valores{width: calc(10%);}
+#linhas-pontos-wrapper .lin .col-actions{width: calc(10%);}
+#linhas-pontos-wrapper .lin-header{}
+#linhas-pontos-wrapper .lin-header .col{
+	background:#f1f1f1;
+	padding:2px;
+	font-size:14px;
+	font-weight:600;
+	color:#282828;
+	border-bottom: solid 2px #c3c4c7;
+}
+#linhas-pontos-wrapper .lin-header .col-ponto{}
+#linhas-pontos-wrapper .lin-header .col-horario{text-align:center;}
+#linhas-pontos-wrapper .lin-header .col-valores{text-align:center;}
+#linhas-pontos-wrapper .lin-header .col-actions{}
+#linhas-pontos-wrapper .lin-itens{}
+#linhas-pontos-wrapper .lin-itens .col{}
+#linhas-pontos-wrapper .lin-itens .col-drag{
+	background:#f1f1f1;
+	cursor:pointer;
+	color:#999;
+}
+#linhas-pontos-wrapper .lin-itens .col-ponto{}
+#linhas-pontos-wrapper .lin-itens .col-horario{}
+#linhas-pontos-wrapper .lin-itens .col-valores{}
+#linhas-pontos-wrapper .lin-itens .col-actions{}
+#linhas-pontos-wrapper .lin-itens:hover .col-drag{
+	background:#c3c4c7;
+}
+
+#linhas-pontos-wrapper .lin i{
+	height:25px;
+	line-height:25px;
+	width:100%;
+	text-align:center;
+}
+#linhas-pontos-wrapper .lin input,
+#linhas-pontos-wrapper .lin select{
+	border:none;
+	width:calc(100% - 1px);
+	height:25px;
+	border-radius:0;
+	min-height: 25px;
+}
+#linhas-pontos-wrapper .lin .form-sel{}
+#linhas-pontos-wrapper .lin .form-input{
+	text-align:center;
+}
+#linhas-pontos-wrapper .lin .remove-ponto{
+	background:#ff0000;
+	width:100%;
+	height:25px;
+	color:#ffffff;
+	border:none;
+	font-weight:bold;
+	text-transform:uppercase;
+	cursor:pointer;
+	display: block;
+	text-align: center;
+	line-height: 25px;
+	text-decoration: none;
+}
+#linhas-pontos-wrapper .lin .remove-ponto:active,
+#linhas-pontos-wrapper .lin .remove-ponto:focus,
+#linhas-pontos-wrapper .lin .remove-ponto:hover{
+	background:#ac0000;
+}
+
+#linhas-pontos-wrapper .lin .select2{}
+#linhas-pontos-wrapper .lin .select2 .selection{
+	height:25px;
+	display:block;
+	line-height: 25px;
+}
+#linhas-pontos-wrapper .lin .select2 .select2-selection{
+	height:25px;
+	line-height: 25px;
+	border:none;
+}
+#linhas-pontos-wrapper .lin .select2 .select2-selection__rendered{
+	line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .CUSTOM TAXONOMIES */

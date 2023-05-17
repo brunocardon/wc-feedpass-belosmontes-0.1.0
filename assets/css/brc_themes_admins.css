@@ -1,0 +1,395 @@
+html, body{font-family: 'Roboto', sans-serif;}
+
+.bullet{
+	display:inline-block;
+	margin:0 5px;
+	background:#0063d2;
+	color:#ffffff;
+	font-size:9px;
+	font-weight:600;
+	text-transform:uppercase;
+	line-height:0.8;
+	padding:2px 5px;
+	border-radius:3px;
+}
+.bullet.status-completed{background:#c8d7e1;color:#2e4453}
+.bullet.status-on-hold{background:#f8dda7;color:#94660c}
+.bullet.status-failed{background:#eba3a3;color:#761919}
+.bullet.status-processing{background:#c6e1c6;color:#5b841b}
+.bullet.status-trash{background:#eba3a3;color:#761919}
+
+/* THEME PASSAGEIROS TABLE LIST */
+.brc-passsageiros-table-wrapper{}
+.brc-passsageiros-table-print{
+	background:#e5e5e5;
+	padding: 10mm;
+}
+.brc-passsageiros-table-a4{
+	background:#ffffff;
+	border:solid 1px #999999;
+	width: 210mm;
+	min-height: 297mm;
+	padding: 7mm;
+	margin: 0 auto;
+	border: 1px #D3D3D3 solid;
+	background: white;
+}
+.brc-passsageiros-table{
+	border:none;
+}
+.brc-passsageiros-table tr{
+	border:none;
+}
+.brc-passsageiros-table th,
+.brc-passsageiros-table td{
+	text-align:left;
+	border:none;
+	border-bottom:solid 1px #ffffff;
+	padding-top:0.6mm;
+	padding-bottom:0.6mm;
+	padding-left:1mm;
+	padding-right:1mm;
+	vertical-align:middle;
+}
+.brc-passsageiros-table tr.normal-sup td{
+	border-bottom:solid 1px #ffffff;
+	padding-top: 3mm;
+	padding-bottom: 0;
+}
+.brc-passsageiros-table th{
+	font-weight:600;
+	font-size:9pt;
+	color:#282828;
+	line-height: 1.8;
+	border-bottom:solid 1px #585858;
+}
+.brc-passsageiros-table td{
+	color:#282828;
+	line-height: 1.5;
+	font-size:8pt;
+}
+.brc-passsageiros-table tr.normal{
+	margin-bottom:5px;
+}
+.brc-passsageiros-table tr.normal td{
+	color:#585858;
+	background:#e5e5e5;
+	padding-top:2px;
+	padding-bottom:2px;
+	font-size:8.5pt;
+	line-height: 1.2;
+}
+.brc-passsageiros-table.simple-table{}
+.brc-passsageiros-table.simple-table tbody tr.filled td{
+	background:#f1f1f1;
+}
+.brc-passsageiros-table.simple-table tbody tr:last-child td{
+	border-bottom:solid 1px #282828;
+}
+.brc-passsageiros-table .cel{}
+.brc-passsageiros-table .hash{width:5mm;padding-left:0.5mm;}
+.brc-passsageiros-table .passageiro{font-weight:600;width:50mm;}
+.brc-passsageiros-table .telefone{font-weight:500;width:30mm;}
+.brc-passsageiros-table .cpf{width:25mm;}
+.brc-passsageiros-table .RG{width:25mm;}
+.brc-passsageiros-table .assentos{width: 18mm;text-align:center;}
+.brc-passsageiros-table .quarto{width: 30mm;text-align:center;}
+.brc-passsageiros-table .hotel{width: 35mm;}
+.brc-passsageiros-table .ingresso{text-align:center;}
+.brc-passsageiros-table .Embarque{}
+.brc-passsageiros-table .emissao{}
+.brc-passsageiros-table .cliente{}
+.brc-passsageiros-table .status{}
+.brc-passsageiros-table .order_id{}
+.brc-passsageiros-table .valor{width: 17mm;text-align:right;padding-right:0.5mm;}
+
+.brc-passsageiros-table tbody.passageiros{}
+.brc-passsageiros-table tbody.passageiros .cel{width: 30mm;}
+.brc-passsageiros-table tbody.passageiros .passageiro{width:55mm;}
+.brc-passsageiros-table tbody.passageiros .hash{width: 5mm;}
+
+.brc-passsageiros-table tfoot{
+	display:none;
+}
+.brc-passsageiros-table tfoot tr{}
+.brc-passsageiros-table tfoot td{
+	background:#282828;
+	color:#ffffff;
+	text-align:right;
+	font-weight:600;
+	font-size:12pt;
+	line-height:1.8;
+	padding-top:2mm;
+	padding-bottom:2mm;
+}
+.brc-passsageiros-table tfoot td.label{
+	text-align:center;
+}
+
+.brc-passsageiros-header{}
+.brc-passsageiros-header-logo-wrapper{
+	display:flex;
+	align-items:center;
+}
+.brc-passsageiros-header-logo-wrapper .logo{
+	flex:0 0 25%;
+}
+.brc-passsageiros-header-logo-wrapper .logo img{
+	display:inline-block;
+}
+.brc-passsageiros-header-logo-wrapper .title{
+	flex:0 0 75%;
+}
+.brc-passsageiros-header-logo-wrapper .title h1,
+.brc-passsageiros-header-logo-wrapper .title h2{
+	margin:0;
+	text-align: center;
+	line-height: 1.1;
+}
+.brc-passsageiros-header-logo-wrapper .title h1{
+	font-size:26pt;
+}
+.brc-passsageiros-header-logo-wrapper .title h2{
+	font-size:20pt;
+	font-weight:500;
+}
+.brc-passsageiros-header-logo-wrapper .title p{
+	font-size: 11pt;
+	font-weight: 400;
+	margin: 0;
+	text-align: center;
+}
+.brc-passsageiros-header-logo-wrapper .title p strong{
+	font-weight:600;
+}
+
+.brc-passsageiros-fill-dados-wrapper{
+	padding:25px 0;
+}
+.brc-passsageiros-fill-dados-wrapper tr{}
+.brc-passsageiros-fill-dados-wrapper td{
+	text-align: left;
+}
+.brc-passsageiros-fill-dados-wrapper td strong{}
+.brc-passsageiros-fill-dados-wrapper .data{}
+.brc-passsageiros-fill-dados-wrapper .veiculo{}
+.brc-passsageiros-fill-dados-wrapper .motorista{}
+.brc-passsageiros-fill-dados-wrapper .linha{
+	width:30mm;
+}
+.brc-passsageiros-fill-dados-wrapper .obs{
+	height:15mm;
+}
+@media print{
+	body{
+	  -webkit-print-color-adjust:exact;
+	}
+	.brc-passsageiros-table-print{
+		padding:0;
+		background:none;
+	}
+	.brc-passsageiros-table-a4{
+		border:none;
+		min-height: initial;
+		margin: 0;
+		border: initial;
+		border-radius: initial;
+		width: initial;
+		min-height: initial;
+		box-shadow: initial;
+		background: initial;
+		page-break-after: always;
+		padding:0;
+	}
+}
+
+/* IMPRIMIR COMPROVANTE DE RESERVA */
+.brc-comprovante-reserva{}
+.brc-comprovante-reserva-print{
+	background:#e5e5e5;
+	padding: 10mm;
+}
+.brc-comprovante-reserva-a4{
+	background:#ffffff;
+	border:solid 1px #999999;
+	width: 210mm;
+	min-height: 297mm;
+	padding: 7mm;
+	margin: 0 auto;
+	border: 1px #D3D3D3 solid;
+	background: white;
+}
+
+.brc-comprovante-reserva-header{
+	margin-bottom: 10mm;
+}
+.brc-comprovante-reserva-header > img{
+	max-width: 60mm;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.brc-comprovante-reserva-header > h1{}
+.brc-comprovante-reserva-header .titulo {
+	display: block;
+	background: #b1010a;
+	padding: 7mm 5mm;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 22pt;
+	text-align: center;
+	line-height: 1;
+}
+.brc-comprovante-reserva-body > h2 {
+	font-size: 16pt;
+	margin-bottom: 5mm;
+	line-height: 1;
+}
+.brc-comprovante-reserva-body .order-details{
+	color: #282828;
+	border: 0.6mm solid #e5e5e5;
+	vertical-align: middle;
+	width: 100%;
+}
+.brc-comprovante-reserva-body .order-details tr{}
+.brc-comprovante-reserva-body .order-details th,
+.brc-comprovante-reserva-body .order-details td{}
+.brc-comprovante-reserva-body .order-details th{}
+.brc-comprovante-reserva-body .order-details td{}
+
+.brc-comprovante-reserva-body .order-details .produto{
+	width:75%;
+}
+.brc-comprovante-reserva-body .order-details .valores{}
+
+.brc-comprovante-reserva-body .order-details thead{}
+.brc-comprovante-reserva-body .order-details thead tr{}
+.brc-comprovante-reserva-body .order-details thead th,
+.brc-comprovante-reserva-body .order-details thead td{
+	color: #282828;
+	border: 0.6mm solid #e5e5e5;
+	vertical-align: middle;
+	padding: 2mm 4mm;
+	text-align: left;
+}
+.brc-comprovante-reserva-body .order-details thead th{}
+.brc-comprovante-reserva-body .order-details thead td{}
+
+.brc-comprovante-reserva-body .order-details tbody{}
+.brc-comprovante-reserva-body .order-details tbody tr{}
+.brc-comprovante-reserva-body .order-details tbody th,
+.brc-comprovante-reserva-body .order-details tbody td{
+	color: #282828;
+	border: 0.6mm solid #e5e5e5;
+	padding: 1mm 4mm;
+	text-align: left;
+	vertical-align: middle;
+	word-wrap: break-word;
+	font-size: 8.4pt;
+	line-height: 2;
+}
+.brc-comprovante-reserva-body .order-details tbody th{}
+.brc-comprovante-reserva-body .order-details tbody td{}
+.brc-comprovante-reserva-body .order-details tbody ul{
+	font-size: 8.4pt;
+	margin: 2mm 0 4mm;
+	padding: 0;
+	list-style: none;
+}
+.brc-comprovante-reserva-body .order-details tbody ul li{
+	font-size: 8.4pt;
+	line-height: 1.6;
+}
+
+.brc-comprovante-reserva-body .order-details tfoot{}
+.brc-comprovante-reserva-body .order-details tfoot tr{}
+.brc-comprovante-reserva-body .order-details tfoot th,
+.brc-comprovante-reserva-body .order-details tfoot td{
+	color: #282828;
+	border: 0.6mm solid #e5e5e5;
+	vertical-align: middle;
+	padding: 2mm 4mm;
+	text-align: left;
+	font-size: 9pt;
+}
+.brc-comprovante-reserva-body .order-details tfoot th{}
+.brc-comprovante-reserva-body .order-details tfoot td{}
+.brc-comprovante-reserva-body .order-details tfoot tr.first th,
+.brc-comprovante-reserva-body .order-details tfoot tr.first td{
+	
+	border-top-width: 2mm;
+}
+
+.brc-comprovante-reserva-body .order-dados{
+	display:flex;
+}
+
+.brc-comprovante-reserva-body .order-qrcode{
+	text-align:center;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 50%;
+	padding: 5mm;
+}
+.brc-comprovante-reserva-body .order-qrcode p{
+	margin:0;
+	font-size:10pt;
+	font-style:italic;
+	line-height:1.4;
+}
+.brc-comprovante-reserva-body .order-qrcode img{
+	max-width:50mm;
+	height:auto;
+	display:inline-block;
+}
+
+.brc-comprovante-reserva-body .order-cliente{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 50%;
+	padding: 5mm;
+}
+.brc-comprovante-reserva-body .order-cliente h3{
+	color: #b1010a;
+	display: block;
+	font-weight: bold;
+	line-height: 6.5mm;
+	margin: 0 0 1mm;
+	text-align: left;
+	font-size: 14pt;
+}
+.brc-comprovante-reserva-body .order-cliente address{
+	color: #282828;
+	line-height: 1.4;
+}
+.brc-comprovante-reserva-body .order-cliente strong{}
+
+.brc-comprovante-reserva-body .brc_order_meta_print{
+	display:none;
+}
+
+@media print{
+	body{
+	  -webkit-print-color-adjust:exact;
+	}
+	.brc-comprovante-reserva-print{
+		padding:0;
+		background:none;
+		page-break-after: always;
+	}
+	.brc-comprovante-reserva-a4{
+		border:none;
+		min-height: initial;
+		margin: 0;
+		border: initial;
+		border-radius: initial;
+		width: initial;
+		min-height: initial;
+		box-shadow: initial;
+		background: initial;
+		
+		padding:0;
+	}
+}
+
+
