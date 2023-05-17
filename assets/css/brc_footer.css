@@ -1,0 +1,180 @@
+/* FOOTER */
+
+.logo-footer{
+	text-align:center;
+}
+.logo-footer img{
+	display:inline-block !important;
+}
+.assinatura-credito img,
+.assinatura-credito a{
+	display:inline-block !important;
+}
+
+.textwidget .footer-duvidas{
+	background:#ffcc29;
+	border-radius:100px;
+	display:inline-block;
+	padding:8px 20px;
+	text-align:center;
+	transition: all 0.25s cubic-bezier(0.700, 0.000, 0.325, 1.000);
+}
+.textwidget .footer-duvidas:hover{
+	background:#ffffff;
+}
+.textwidget .footer-duvidas h3{
+	color: #201751 !important;
+	font-size: 18px;
+	margin: 0 0 5px 0;
+	line-height: 1;
+}
+.textwidget .footer-duvidas span{
+	color: #201751 !important;
+	font-size: 20px;
+}
+
+.eltdf-footer-top-holder .menu li{
+	padding:2px 0 !important;
+	position:relative;
+	line-height: 1.5;
+	margin-bottom:3px !important;
+}
+.eltdf-footer-top-holder .menu li:before{
+	content: "";
+	position:absolute;
+	width:5px;
+	height:5px;
+	border-radius:100px;
+	left:0;
+	top:10px;
+	background:#ffcc29;
+	display:none;
+}
+.eltdf-footer-top-holder .menu li a{
+	color:#ffffff;
+	display:block;
+}
+.eltdf-footer-top-holder .menu li.current_page_item,
+.eltdf-footer-top-holder .menu li.current_page_item  a,
+.eltdf-footer-top-holder .menu li:hover,
+.eltdf-footer-top-holder .menu li:hover a{
+	color:#ffcc29;
+}
+
+footer .eltdf-footer-top .eltdf-social-icon-widget-holder{}
+footer .eltdf-footer-top .eltdf-social-icon-widget-holder:hover{}
+footer .eltdf-footer-top .widget.widget_text{
+	color:#e5e5e5;
+}
+footer .eltdf-footer-top-holder .eltdf-column{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+footer .eltdf-footer-top-holder .eltdf-column:nth-child(1){}
+footer .eltdf-footer-bottom{
+	text-align: center;
+	color:#282828;
+	font-weight:400;
+}
+footer .eltdf-footer-top:not(.eltdf-footer-top-full) .eltdf-container-inner{
+	padding-top:35px;
+	padding-bottom:35px;
+}
+footer .eltdf-footer-top .widget .eltdf-footer-widget-title{
+	font-size:16px;
+	color:#ffffff;
+	line-height:1.5;
+}
+
+footer .eltdf-footer-top-holder .eltdf-column:nth-child(2) .widget_nav_menu{
+	margin-bottom:35px;
+	padding-bottom:35px;
+	border-bottom:solid 1px #312866;
+}
+footer .eltdf-footer-top-holder .eltdf-column:nth-child(2) .widget_nav_menu:last-child{
+	padding-bottom:0;
+	margin-bottom:0;
+	border-bottom:0;
+}
+
+@media(min-width:769px){
+	footer .logo-footer{
+		text-align:left;
+		margin-bottom:25px;
+	}
+	
+	.eltdf-footer-top-holder .menu li{
+		padding:2px 0 2px 12px !important;
+	}
+	.eltdf-footer-top-holder .menu li:before{
+		display:block;
+	}
+	
+	footer .eltdf-footer-top .widget .eltdf-footer-widget-title{
+		text-align:left;
+	}
+	footer .eltdf-footer-bottom{
+		text-align: left;
+	}
+	footer .eltdf-footer-bottom .eltdf-three-columns-inner{
+		display: flex;
+		align-items: center;
+	}
+	footer .eltdf-footer-bottom .eltdf-three-columns-inner .eltdf-column{
+		flex:0 0 33.333%;
+	}
+	footer .eltdf-footer-bottom .eltdf-three-columns-inner .eltdf-column:nth-child(3){
+		text-align:right;
+	}
+	
+	footer .eltdf-two-columns-50-50 > .eltdf-two-columns-50-50-inner{
+		display: flex;
+		align-items: center;
+	}
+	footer .eltdf-footer-bottom-holder .eltdf-two-columns-50-50 > .eltdf-two-columns-50-50-inner .eltdf-column:nth-child(2){
+		text-align:right;
+	}
+	footer .eltdf-footer-top-holder .eltdf-column-inner{
+		text-align:left;
+	}
+	
+	footer .eltdf-footer-top-holder .eltdf-three-columns-inner{
+		display:flex;
+		align-items:center;
+	}
+	
+	footer .eltdf-footer-top-holder .eltdf-column{}
+	footer .eltdf-footer-top-holder .eltdf-column:nth-child(1){
+		width:25%;
+	}
+	
+	footer .eltdf-footer-top-holder .eltdf-column:nth-child(2){
+		width:55%;
+	}
+	footer .eltdf-footer-top-holder .eltdf-column:nth-child(2) .eltdf-column-inner{
+		display:flex;
+		flex-wrap:wrap;
+		align-items:strech;
+	}
+	footer .eltdf-footer-top-holder .eltdf-column:nth-child(2) .widget_nav_menu{
+		width:calc(100% / 3);
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:0;
+		margin-bottom:0;
+		border-bottom:0;
+		
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	footer .eltdf-footer-top-holder .eltdf-column:nth-child(3){
+		width:20%;
+	}
+	footer .eltdf-footer-top-holder .eltdf-column:nth-child(3) .eltdf-column-inner{
+		text-align:right;
+	}
+}
+
+/* / FOOTER */

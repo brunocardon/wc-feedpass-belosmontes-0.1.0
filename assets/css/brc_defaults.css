@@ -1,0 +1,204 @@
+/* TEXTO */
+
+._t300font, ._t300font *{font-weight:300;}
+._t400font, ._t400font *{font-weight:400;}
+._t500font, ._t500font *{font-weight:500;}
+._t600font, ._t600font *{font-weight:600;}
+._t700font, ._t700font *{font-weight:700;}
+._t800font, ._t800font *{font-weight:800;}
+._t900font, ._t900font *{font-weight:900;}
+._tjust, ._tjust *{text-align:justify;}
+._tifont, ._tifont *{font-style:italic;}
+._tunderline, ._tunderline *{text-decoration: underline;}
+._twhite, ._twhite *{color:#ffffff;}
+
+strong,
+b{
+	font-weight:600;
+}
+
+.text-center, 
+.text-center *{
+	text-align:center;
+}
+.text-right, 
+.text-right *{
+	text-align:right;
+}
+.text-left, 
+.text-left *{
+	text-align:left;
+}
+@media(max-width:767px){
+	.mob-text-center, 
+	.mob-text-center *{text-align:center !important;}
+	.mob-text-center.vc_btn3-container{display:block;}
+}
+
+.brc-notices{
+	display:none;
+}
+.brc-notices.on{
+	display:block;
+	padding: 10px 15px 10px 25px;
+	border-radius: 5px;
+	margin:45px 0 35px;
+	border: solid 2px #7b1b1b;
+	background:#ffd6d6;
+}
+.brc-notices li{
+	color:#7b1b1b;
+	margin-bottom: 5px;
+	line-height:1.2;
+	font-size:12px;
+}
+.brc-notices a{
+	color:#7b1b1b;
+	text-decoration:underline;
+}
+
+button.belm-btn[type="submit"]:not(.w-btn), 
+input.belm-btn[type="submit"],
+.belm-btn{
+	display: inline-block;
+	text-align: center;
+	padding: 10px 25px;
+	border-radius: 10px;
+	font-weight: 600;
+	background: #f98732;
+	color: #374a8b;
+	transition: all 0.25s cubic-bezier(0.700, 0.000, 0.325, 1.000);
+}
+.belm-btn.btn-fullw{
+	width:100%;
+}
+button.belm-btn[type="submit"]:not(.w-btn):hover, 
+input.belm-btn[type="submit"]:hover,
+.belm-btn:hover{
+	background: #374a8b !important;
+	color:#ffffff !important;
+}
+
+.belm-btn.btn-group {
+	position: relative;
+	padding-right: calc(15px + 40px);
+}
+.belm-btn.btn-group i {
+	position: absolute;
+	right: 0;
+	width: 40px;
+	top: 0;
+	bottom: 0;
+	line-height: 48px;
+	text-align: center;
+	background: rgba(0,0,0,0.05);
+	border-radius: 0 10px 10px 0;
+	border-left: solid 1px rgba(0,0,0,0.07);
+	font-size: 21px;
+}
+.belm-btn.btn-group:hover i{}
+
+.belm-btn.btn-color-two{
+	background: #71a55b;
+	color: #ffffff;
+}
+.belm-btn.btn-color-two:hover{
+	background: #4f8a40 !important;
+	color:#ffffff !important;
+}
+.belm-btn.btn-color-three{
+	background: #c93a77;
+	color: #ffffff;
+}
+.belm-btn.btn-color-three:hover{
+	background: #b92853 !important;
+	color:#ffffff !important;
+}
+.belm-btn.btn-color-four{
+	background: #374a8b;
+	color: #ffffff;
+}
+.belm-btn.btn-color-four:hover{
+	background: #263468 !important;
+	color:#ffffff !important;
+}
+
+.belm-btn.btn-lg{
+	padding:15px 35px;
+	font-size:22px;
+}
+
+
+.animado,
+.animados *,
+.animados *:before,
+.animados *:after{
+	transition: all 0.25s cubic-bezier(0.700, 0.000, 0.325, 1.000);
+}
+
+.full-loading{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:url(../img/fepa-loading.gif) no-repeat center center rgba(235, 235, 235,0.85);
+	z-index:1500;
+	display:none;
+}
+
+.belm-form{}
+.belm-form .wpb_row{
+	margin-left:-7.5px;
+	margin-right:-7.5px;
+}
+.belm-form .form-group{
+	padding:7.5px;
+	position:relative;
+}
+.belm-form .form-group-select:after{
+	content: '';
+	position: absolute;
+	top: 56%;
+	transform: translateY(-50%);
+	right: 10px;
+	pointer-events: none;
+	border: 0.4em solid;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-radius: 2px;
+}
+.belm-form .form-group-select:after{
+	font-size: 1rem;
+	margin: 0 0.8rem;
+	color: #333;
+}
+.belm-form .form-field{}
+.belm-form input.form-field{}
+.belm-form textarea.form-field{
+	height:175px;
+}
+.belm-form select.form-field{
+	-webkit-appearance: none;
+}
+.belm-form .form-field:focus{}
+.belm-form .form-field:hover{}
+.belm-form .wpcf7-submit{
+	transition: all 0.25s cubic-bezier(0.700, 0.000, 0.325, 1.000);
+	width:100%;
+}
+.belm-form .wpcf7-not-valid-tip{
+	position: absolute;
+	right: 0;
+	top: 2px;
+	background: #e5e5e5;
+	border-radius: 0 10px 0 10px;
+	font-size: 12px;
+	padding: 0 5px;
+	border: solid 1px #fff;
+}
+.belm-form .wpcf7 form.invalid .wpcf7-response-output, 
+.belm-form .wpcf7 form.unaccepted .wpcf7-response-output{
+	margin:0;
+}
